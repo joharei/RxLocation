@@ -1,5 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'me.tatarka.retrolambda'
 apply plugin: 'jacoco-android'
 apply plugin: 'com.jfrog.bintray'
 apply plugin: 'com.github.dcendents.android-maven'
@@ -35,10 +34,6 @@ android {
     lintOptions {
         abortOnError false
     }
-}
-
-retrolambda {
-    javaVersion JavaVersion.VERSION_1_6
 }
 
 dependencies {
